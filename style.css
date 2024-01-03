@@ -1,0 +1,111 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lexend', sans-serif;
+    background: #51e2f5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #51e2f5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #51e2f5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-title {
+    font-size: 35pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px;
+    color: #3a4660;
+}
+
+.sub-title {
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+    color: #3a4660;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.pricing-plan {
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    flex: 1;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.pricing-plan:hover,
+.pricing-plan:focus,
+.pricing-plan:active {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan-features li {
+    margin-bottom: 20px;
+}
+
+.plan-button {
+    padding: 10px;
+    background-color: orange;
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    border: none;
+    z-index: 1;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin: 10px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 5px;
+}
+
+.plan-button:hover {
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.plan-button:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+.plan-button:active {
+    top: 2px;
+}
+
+@media (max-width: 1250px) {
+    .pricing-container {
+        flex-direction: column;
+        height: 100%;
+    }
+}
